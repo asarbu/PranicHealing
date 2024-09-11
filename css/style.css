@@ -158,7 +158,7 @@ header#top {
 	height: 96px;
 }
 
-h1.logo img {
+h1.logo a {
 	display: inline-block;
 	float: left;
 	color: #444;
@@ -166,6 +166,9 @@ h1.logo img {
 	width: 96px;
 	height: 96px;
 	object-fit: fill;
+ background: url(../images/logo.webp) no-repeat;
+
+  background-size: cover;
 }
 
 header#top nav {
@@ -886,13 +889,15 @@ footer {
 	padding: 60px 0;
 }
 
-footer img.logo {
+footer a.logo {
 	display: block;
 	float: left;
 	color: #fff;
 	text-indent: -4999px;
 	width: 96px;
 	height: 96px;
+	background: url(../images/logo.webp) no-repeat;
+	background-size: cover;
 }
 
 footer .footer-left {
