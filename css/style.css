@@ -155,18 +155,17 @@ a.button-2:hover {
 
 header#top {
 	background: #fff;
-	height: 90px;
+	height: 96px;
 }
 
-h1.logo a {
+h1.logo img {
 	display: inline-block;
 	float: left;
 	color: #444;
-	line-height: 2.25;
 	text-indent: -4999px;
-	background: url(../images/logo.png) no-repeat;
 	width: 96px;
 	height: 96px;
+	object-fit: fill;
 }
 
 header#top nav {
@@ -887,14 +886,11 @@ footer {
 	padding: 60px 0;
 }
 
-footer a.logo {
+footer img.logo {
 	display: block;
 	float: left;
 	color: #fff;
 	text-indent: -4999px;
-	background: url(../images/logo.png) no-repeat;
-	margin: 0 0 0 40px;
-	padding: 0 0 40px 0;
 	width: 96px;
 	height: 96px;
 }
