@@ -286,13 +286,13 @@ header#top nav ul li a.nav-cta {
 
 @media only screen and (max-width: 1024px) {
 	#banner {
-		height: 420px;
+		height: auto;
 	}
 }
 
 @media only screen and (max-width: 480px) {
 	#banner {
-		height: 400px;
+		height: auto;
 	}
 }
 
