@@ -165,9 +165,8 @@ h1.logo a {
 	line-height: 2.25;
 	text-indent: -4999px;
 	background: url(../images/logo.png) no-repeat;
-	margin: 20px 0 0 20px;
-	width: 64px;
-	height: 6%;
+	width: 96px;
+	height: 96px;
 }
 
 header#top nav {
@@ -896,8 +895,8 @@ footer a.logo {
 	background: url(../images/logo.png) no-repeat;
 	margin: 0 0 0 40px;
 	padding: 0 0 40px 0;
-	width: 64px;
-	height: 64px;
+	width: 96px;
+	height: 96px;
 }
 
 footer .footer-left {
