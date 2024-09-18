@@ -34,17 +34,19 @@ h1, h2, h3, h4, h5, h6 {
 	color: #444;
 	margin: 0;
 	padding: 0; 
+	text-align: center;
 }
 
 h2 { font-size: 60px;}
 h3 { font-size: 54px;}
 h4 { font-size: 32px;}
 h5 { font-size: 21px;}
-h6 { font-size: 18px;}
+h6 { font-size: 14px; padding-top: 8px;}
 
 p {
 	line-height: 1.4;
 	margin: 20px 0;
+	text-align: left;
 }
 
 p.subtitle {
@@ -296,42 +298,48 @@ header#top nav ul li a.nav-cta {
 	}
 }
 
-/*Video Section*/
-
-.video-section {
-	text-align: center;
-	padding: 100px 0;
-	background: #fff;
+section {
+	padding: 100px 0 0 0;
+	padding: 100px 10% 100px 10%;
 }
 
-.video-section p.subtitle {
+/*White Section*/
+
+.white-section {
+	background: #fff;
+	font-weight: 700;
+}
+
+.white-section p.subtitle {
 	color: var(--primary-color);
 	font-size: 17px;
+	text-align: center;
 }
 
-.video-section video {
-	margin-top: 80px;
-}
-
-.video-section .button-1, .video-section .button-2 {
+.white-section .button-1, .video-section .button-2 {
 	display: block;
 	margin: 60px auto 0 auto;
 }
 
-/*Services Section*/
+/*Dark Section*/
 
-.services-section {
+.dark-section {
+	background: rgb(245, 245, 245);
 	text-align: center;
-	padding: 100px 0;
-	background: #f9f9f9;
 }
 
-.services-section p.subtitle {
+.dark-section p.subtitle {
 	color: var(--primary-color);
 	font-size: 17px;
+	text-align: center;
 }
 
 ul.services-list {
+	width: 90%;
+	margin: 100px auto 60px;
+}
+
+ul.dark-list {
 	width: 90%;
 	margin: 100px auto 60px;
 }
@@ -396,58 +404,20 @@ ul.services-list li:last-of-type {
 	}
 }
 
-
-/*Text Section*/
-
-.text-section {
-	text-align: left;
-	padding: 100px 0;
-	background: #fff;
-}
-
-.text-section p.subtitle {
-	text-align: left;
-	color: var(--primary-color);
-	font-size: 17px;
-	margin-bottom: 40px;
-}
-
-.text-section .image {
+.white-section .image {
 	text-align: center;
 }
 
-.text-section .image.align-left {
+.white-section .image.align-left {
 	float: left;
 	width: 50%;
 	padding: 0 20px;
 }
 
-.text-section .text.align-left {
-	float: left;
-	width: 50%;
-	padding: 0 10% 0 40px;
-}
-
-.text-section .image.align-right {
+.white-section .image.align-right {
 	float: right;
 	width: 50%;
 	padding: 0 20px;
-}
-
-.text-section .text.align-right{
-	float: right;
-	width: 50%;
-	padding: 0 40px 0 10%;
-}
-
-.text-section .image.align-center {
-	
-}
-
-.text-section .text.align-center {
-	text-align: center;
-	width: 80%;
-	margin: 0 auto;
 }
 
 .text-section .text.align-center p.subtitle {
@@ -472,20 +442,15 @@ ul.list-checkmarks li {
 		float: none!important;
 		text-align: center;
 	}
-	.text-section .text.align-right, 
-	.text-section .text.align-left,
-	.text-section .image.align-right,
-	.text-section .image.align-left {
+	.white-section .image.align-right,
+	.white-section .image.align-left {
 		width: 100%;
 	}
-	.text-section .image {
+	.white-section .image {
 		float: none!important;
 		width: 80%!important;
 		padding: 0 20px;
 		margin: 0 auto 60px auto;
-	}
-	.text-section .text p.subtitle {
-		text-align: center;
 	}
 }
 
@@ -537,25 +502,12 @@ ul.list-checkmarks li {
 	}
 }
 
-
-/*Team Section*/
-
-.team-section {
-	text-align: center;
-	padding: 100px 0 0 0;
-	background: #f9f9f9;
-}
-
-.team-section p.subtitle {
-	color: var(--primary-color);
-	font-size: 17px;
-}
-
 ul.team-list {
 	width: 90%;
-	margin: 60px auto 0px;
+	margin: 0px auto 0px;
 	grid-auto-flow: column;
 	grid-template-rows: auto;
+	text-align: center;
 }
 
 ul.team-list li {
@@ -563,7 +515,7 @@ ul.team-list li {
 	width: 29%;
 	background: #fff;
 	padding: 60px 0px;
-	margin: 0px 2% 180px 0 ;
+	margin: 180px 2% 0 0 ;
 }
 
 ul.team-list li:hover {
@@ -573,6 +525,7 @@ ul.team-list li:hover {
 ul.team-list li .image-container {
 	width: 100%;
 	margin: -170px auto 40px auto;
+	text-align: center;
 }
 
 ul.team-list li .image-container img {
@@ -595,9 +548,8 @@ ul.social-links {
 }
 
 ul.social-links li {
-	float: left;
-	display: inline-block;
-	margin: 0 5px;
+	float: center;
+	margin: 0 0px;
 	padding: 0;
 	width: 48px;
 	height: 48px;
@@ -616,11 +568,14 @@ ul.social-links li a:hover {
 	background-color: var(--primary-color);
 }
 
+ul.social-links li a.website {
+	background-image: url(../images/website.png);
+}
 ul.social-links li a.facebook {
 	background-image: url(../images/social-facebook.png);
 }
 ul.social-links li a.mail {
-	background-image: url(../images/social-email-3.png);
+	background-image: url(../images/email.png);
 }
 ul.social-links li a.twitter {
 	background-image: url(../images/social-twitter.png);
@@ -647,15 +602,14 @@ ul.team-list li:last-of-type {
 
 @media only screen and (max-width: 960px) {
 	ul.team-list li {
-		display: block;
+		display: grid;
 		width: 100%;
-		margin: 80px 0!important;
+		margin: 140px 0!important;
 	}
 	ul.team-list li:first-of-type {
 		margin-top: 0!important;
 	}
 	ul.social-links li {
-		float: left;
 		display: inline-block;
 		width: 48px;
 		margin: 0 3px!important;
@@ -752,38 +706,25 @@ ul.portfolio-list li a:hover {
 	margin: 10px 5px;
 }
 
-/*Pricing Section*/
-
-.pricing-section {
-	text-align: center;
-	padding: 100px 0;
-	background: #f9f9f9;
-}
-
-.pricing-section p.subtitle {
-	color: var(--primary-color);
-	font-size: 17px;
-}
-
-ul.pricing-table {
+ul.dark-list {
 	width: 90%;
 	margin: 100px auto 60px;
 }
 
-ul.pricing-table li {
+ul.dark-list li {
 	display: inline-block;
 	float: left;
 	width: 30.66%;
-	background: #fff;
+	background: rgb(245, 245, 245);
 	padding: 60px 0;
 	margin: 0 2%;
 }
 
-ul.pricing-table li:hover {
+ul.dark-list li:hover {
 	box-shadow: 0px 0px 40px rgba(0,0,0,.1);
 }
 
-.price-container {
+.dark-container {
 	font-family: 'Arimo', sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -792,71 +733,60 @@ ul.pricing-table li:hover {
 	margin: 0 auto;
 }
 
-.price-container .currency-symbol {
-	font-size: 21px;
-	position: absolute;
-	top: 15px;
-	left: 40px;
-}
-
-.price-container .price {
-	font-size: 86px;
-}
-
-.price-container .terms {
+.dark-container .terms {
 	font-size: 21px;
 }
 
-ul.pricing-table li p {
+ul.dark-table li p {
 	width: 80%;
 	margin: 20px auto 40px auto;
 }
 
-ul.pricing-table li a {
+ul.dark-list li a {
 	font-family: 'Arimo', sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 	color: var(--primary-color);
 }
 
-ul.pricing-table li a:hover {
+ul.dark-list li a:hover {
 	color: var(--primary-dark);
 }
 
-ul.pricing-table li:first-of-type {
+ul.dark-list li:first-of-type {
 	margin-left: 0;
 }
 
-ul.pricing-table li:last-of-type {
+ul.dark-list li:last-of-type {
 	margin-right: 0;
 }
 
-ul.pricing-table ul.features {
+ul.dark-list ul.features {
 	margin: 30px 0 30px 0;
 }
 
-ul.pricing-table .button-1 {
+ul.dark-list .button-1 {
 	color: #fff;
 	border-color: var(--primary-color);
 }
 
-ul.pricing-table .button-2 {
+ul.dark-list .button-2 {
 	color: #777;
 	border-color: #777;
 }
 
-ul.pricing-table .button-1:hover {
+ul.dark-list .button-1:hover {
 	color: #fff;
 	background-color: var(--primary-dark);
 	border-color: var(--primary-dark);
 }
 
-ul.pricing-table .button-2:hover {
+ul.dark-list .button-2:hover {
 	background-color: #777;
 	color: #fff;
 }
 
-ul.pricing-table ul.features li {
+ul.dark-list ul.features li {
 	display: block;
 	width: 100%;
 	margin: 0px 0;
@@ -864,15 +794,15 @@ ul.pricing-table ul.features li {
 	font-family: 'Arimo', sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
-	color: #bbb;
+	color: #888;
 }
 
-ul.pricing-table ul.features li:hover {
+ul.dark-list ul.features li:hover {
 	box-shadow: none;
 }
 
 @media only screen and (max-width: 960px) {
-	ul.pricing-table li {
+	ul.dark-list li {
 		display: block;
 		width: 100%;
 		margin: 20px 0!important;
