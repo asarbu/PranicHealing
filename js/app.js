@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", async (event) => {
     const calendar = await response.json();
     /** @type {Array} */
     const events = calendar.items;
+    events.sort(function(a,b){
+        return new Date(a.start.dateTime) - new Date(b.start.dateTime);
+      });
     events.forEach((event) => {
         const eventList = document.getElementById('lista-evenimente');
         const eventListItem = document.createElement('li');
