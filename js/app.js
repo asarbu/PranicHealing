@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
     });
 
     document.getElementById('wapp-button')?.addEventListener('click', () => {
-        const number = '40722348687';
+        const number = '40771337297';
         const wappName = document.getElementById('wapp-name').value;
         const wappNumber = document.getElementById('wapp-number').value;
         const encodedMessage = encodeURIComponent(`Buna ziua! Ma numesc ${wappName} si as dori sa aflu mai mutle despre Pranic Healing. Va rog sa ma contactati la numarul de telefon ${wappNumber}`);
