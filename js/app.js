@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded", async (event) => {
 
     const calendar = await response.json();
     /** @type {Array} */
-    const events = calendar.items;
+    let events = calendar.items;
+    events = events.filter((event) => event.status === 'confirmed' && event.start && event.end);
     events.sort(function(a,b){
         return new Date(a.start.dateTime) - new Date(b.start.dateTime);
       });
